@@ -1,0 +1,22 @@
+# Install laravel
+
+1. composer global require laravel/installer
+2. composer create-project --prefer-dist laravel/laravel blog "5.8.*"
+
+# Run laravel
+php artisan server
+
+
+# Database - create, modify, delete migrations
+
+1. create table
+php artisan make:migration create_posts_table
+
+2. Run migrations
+php artisan migrate
+
+3. update migration
+php artisan migrate:refresh
+
+4. Make model
+php artisan make:model Profile
